@@ -99,6 +99,20 @@ main {
   padding: 40px 36px 44px;
 }
 
+.doc-card + .doc-card {
+  margin-top: 32px;
+}
+
+.doc-card {
+  scroll-margin-top: 80px;
+  overflow-wrap: anywhere;
+}
+
+[dir="rtl"] ul {
+  padding-left: 0;
+  padding-right: 22px;
+}
+
 h1 {
   margin: 0 0 6px;
   font-size: 2rem;
@@ -170,8 +184,14 @@ a {
     font-size: 1.6rem;
   }
 
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
   .top-nav {
     gap: 14px;
+    flex-wrap: wrap;
   }
 
   .top-nav a {
